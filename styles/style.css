@@ -1,0 +1,14 @@
+*{
+    /* create reset code */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* create body background red */
+body{
+    background-image: url('../background/blurry-gradient-haikei.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
