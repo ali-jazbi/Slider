@@ -86,13 +86,13 @@ body {
      animation-play-state: paused;
  }
  .checkbox.scnd + label{
-   background-image: url('http://www.upsara.com/images/o521088_.jpg');
+   background-image: url('http://www.upsara.com/images/j097497_.jpg');
  }
  .checkbox.thrd + label{
-   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+   background-image: url('http://www.upsara.com/images/o156846_.jpg');
  }
  .checkbox.foth + label{
-   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+   background-image: url('http://www.upsara.com/images/f391235_.jpg');
  }
  .checkbox.fifth + label{
     background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
@@ -141,10 +141,10 @@ body {
    margin: 0;
    list-style: none;
    height: 400px;
-   border: 5px solid #071035;
+   border: 5px solid #483D59;
    background-size: cover;
    background-position: center;
-   background-image: url('http://www.upsara.com/images/m678940_.jpg');
+   background-image: url('http://www.upsara.com/images/p711781_.jpg');
    border-radius: 50%;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
@@ -152,7 +152,7 @@ body {
    font-size: 16px;
    letter-spacing: 2px;
    line-height: 2.7;
-   color: #343434;
+   color: #000000;
    writing-mode: vertical-rl;
    opacity: 0;
    pointer-events: none;
@@ -164,16 +164,20 @@ body {
    mix-blend-mode: difference;
  }
  ul li:nth-child(2) {
-   background-image: url('http://www.upsara.com/images/o521088_.jpg');
+   background-image: url('http://www.upsara.com/images/x468398_.jpg');
+   border: 5px solid #DAA476;
  }
  ul li:nth-child(3) {
-   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+   background-image: url('http://www.upsara.com/images/h853822_.jpg');
+      border: 5px solid #94D1FE;
  }
  ul li:nth-child(4) {
-   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+   background-image: url('http://www.upsara.com/images/f391235_.jpg');
+      border: 5px solid #8E2139;
  }
  ul li:nth-child(5) {
     background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+       border: 5px solid #DAA476;
   }
  
  
@@ -238,3 +242,70 @@ body {
      height: 200px;
    }
  }
+ /* NOTE Second Slider */
+ @-webkit-keyframes animation{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+
+@-webkit-keyframes animation2{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+@font-face
+{
+font-family: font;
+src: url(https://dl.dropboxusercontent.com/u/50037593/ElasticSlider/hand.ttf);
+font-weight:bold;
+}
+
+.slider div p{color:#1c1c1c;position:absolute;bottom:-65px; font-family:font; font-size:22px;}
+.slider{
+
+     -webkit-animation:animation ease 1s;animation-delay:.8s;animation-fill-mode:backwards;
+ 
+
+    margin:60px auto 0 auto;
+    height:360px;
+    width:240px;
+    padding:40px;
+    top:100px;
+
+       perspective:1000px;
+       transition:ease-in-out .2s;
+             /*-webkit-transform:rotateX(45deg);
+             -webkit-transform-style:preserve-3d;
+                 position:absolute;*/
+}
+/*.slider:active{ -webkit-transform:rotateZ(10deg);}*/
+
+
+.slide img { text-align:center;width:100%; height:100%; -webkit-user-drag:none;user-drag:none;-moz-user-drag:none; border-radius:2px; }
+
+
+.slide{
+
+    
+
+      -webkit-user-select:none;
+user-select:none;
+  -moz-user-select:none;
+    position:absolute;
+        height:280px;
+    width:240px;
+
+box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
+background:#fcfcfc;
+             -webkit-transform-style:preserve-3d;
+              transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+             text-align:center;
+             /*overflow:hidden;*/
+             border:12px white solid;
+             box-sizing:border-box;
+             border-bottom:55px white solid;
+             border-radius:5px;
+
+
+    
+}
+.transition {
+     -webkit-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+   -moz-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+      transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+}
+
