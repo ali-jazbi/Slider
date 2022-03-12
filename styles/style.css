@@ -68,11 +68,12 @@ body {
    cursor: pointer;
    margin: 0 auto;
    text-align: center;
-   margin-right: 6px;
-   margin-left: 6px;
+   margin-right: 10px;
+   margin-left: 10px;
    display: inline-block;
    width: 50px;
    height: 50px;
+   margin-top: 40px;
    border: 3px solid #bdc3c7;
    background-size: cover;
    background-position: center;
@@ -95,7 +96,10 @@ body {
    background-image: url('http://www.upsara.com/images/f391235_.jpg');
  }
  .checkbox.fifth + label{
-    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+    background-image: url('http://www.upsara.com/images/k123637_.jpg');
+  }
+  .checkbox.six + label{
+    background-image: url('http://www.upsara.com/images/d991312_.jpg');
   }
  
  .checkbox:checked + label{
@@ -140,7 +144,7 @@ body {
    padding: 0;
    margin: 0;
    list-style: none;
-   height: 400px;
+   height: 450px;
    border: 5px solid #483D59;
    background-size: cover;
    background-position: center;
@@ -156,7 +160,8 @@ body {
    writing-mode: vertical-rl;
    opacity: 0;
    pointer-events: none;
-   box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+   border: 5px solid #483d591c;
+   box-shadow: 0 0 1px #D2E0FA, 0 0 2px #D2E0FA, 0 0 6px #D2E0FA, 0 0 12px #D2E0FA, inset 0 0 1px #D2E0FA, inset 0 0 2px #D2E0FA, inset 0 0 6px #D2E0FA, inset 0 0 12px #D2E0FA;
    -webkit-transition: all 0.5s ease;
    transition: all 0.5s ease;
  }
@@ -165,19 +170,28 @@ body {
  }
  ul li:nth-child(2) {
    background-image: url('http://www.upsara.com/images/x468398_.jpg');
-   border: 5px solid #DAA476;
+   border: 5px solid #483d591c;
+   box-shadow: 0 0 1px #DAA476, 0 0 2px #DAA476, 0 0 6px #DAA476, 0 0 12px #DAA476, inset 0 0 1px #DAA476, inset 0 0 2px #DAA476, inset 0 0 6px #DAA476, inset 0 0 12px #DAA476;
  }
  ul li:nth-child(3) {
    background-image: url('http://www.upsara.com/images/h853822_.jpg');
-      border: 5px solid #94D1FE;
+      border: 5px solid #483d595b;
+   box-shadow: 0 0 1px #7CABC9, 0 0 2px #7CABC9, 0 0 6px #7CABC9, 0 0 12px #7CABC9, inset 0 0 1px #7CABC9, inset 0 0 2px #7CABC9, inset 0 0 6px #7CABC9, inset 0 0 12px #7CABC9;
  }
  ul li:nth-child(4) {
    background-image: url('http://www.upsara.com/images/f391235_.jpg');
-      border: 5px solid #8E2139;
+      border: 5px solid #483d591c;
+   box-shadow: 0 0 1px #C4B0A9, 0 0 2px #C4B0A9, 0 0 6px #C4B0A9, 0 0 12px #C4B0A9, inset 0 0 1px #C4B0A9, inset 0 0 2px #C4B0A9, inset 0 0 6px #C4B0A9, inset 0 0 12px #C4B0A9;
  }
  ul li:nth-child(5) {
-    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
-       border: 5px solid #DAA476;
+    background-image: url('http://www.upsara.com/images/i568278_.jpg');
+       border: 5px solid #483d5962;
+   box-shadow: 0 0 1px #e2e056, 0 0 2px #e2e056, 0 0 6px #e2e056, 0 0 12px #e2e056, inset 0 0 1px #e2e056, inset 0 0 2px #e2e056, inset 0 0 6px #e2e056, inset 0 0 12px #e2e056;
+  }
+  ul li:nth-child(6) {
+    background-image: url('http://www.upsara.com/images/x812772_.jpg');
+       border: 5px solid #483d5977;
+   box-shadow: 0 0 1px #C4B0A9, 0 0 2px #C4B0A9, 0 0 6px #C4B0A9, 0 0 12px #C4B0A9, inset 0 0 1px #C4B0A9, inset 0 0 2px #C4B0A9, inset 0 0 6px #C4B0A9, inset 0 0 12px #C4B0A9;
   }
  
  
@@ -201,7 +215,12 @@ body {
    pointer-events: auto;
    border-radius: 16px;
  }
- .checkbox.fifth:checked ~ ul li:nth-child(4) {
+ .checkbox.fifth:checked ~ ul li:nth-child(5) {
+    opacity: 1;
+    pointer-events: auto;
+    border-radius: 16px;
+  }
+  .checkbox.six:checked ~ ul li:nth-child(6) {
     opacity: 1;
     pointer-events: auto;
     border-radius: 16px;
@@ -227,6 +246,10 @@ body {
    .slider-height-padding {
      padding-top: 340px;
    }
+   .checkbox:checked + label,
+ .checkbox:not(:checked) + label{
+   margin-top:7px;
+ }
    ul li {
      height: 300px;
      font-size: 13px;
